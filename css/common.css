@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* 공통값*/
+:root {
+  --main-font: 'Pretendard', sans-serif;
+  --sub-font: 'Noto Serif KR';
+  --font-color: #181818;
+  --point-color: #0E6531;
+}
+
+body {
+  position: relative;
+  color: var(--font-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+.inner {
+  max-width: 1248px;
+  padding: 0 24px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* top-btn */
+#top-btn {
+  position: fixed;
+  z-index: 100;
+  bottom: 40px;
+  right: 2%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 16px;
+  opacity: 0;
+  transition: 0.7s ease;
+}
+
+#top-btn.on {
+  opacity: 1;
+}
